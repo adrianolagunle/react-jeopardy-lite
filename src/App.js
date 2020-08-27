@@ -6,6 +6,8 @@ import Clock from "./components/clock/Clock";
 import Contact from "./components/contact/Contact"
 import Navigation from "./components/navigation/Navigation"
 import NoMatch from "./components/error404/Error404"
+import Testfetch from "./components/testfetch/Testfetch"
+import Jeopardy from "./components/jeopardy/Jeopardy"
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         path="/"
         render={(props) => <Welcome {...props} name="Adrian" />}
       />
+      <Route path="/jeopardy" component= {Jeopardy}/>
+      <Route path="/testfetch" component= {Testfetch} />
       <Route path="/clock" component={Clock} />
       <Route path="/contact" component={Contact} />
       <Route path="*" component={NoMatch}/>

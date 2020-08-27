@@ -72,3 +72,16 @@ button {
   color: yellow;
 
 }
+
+.Display img {
+  width: 200px;
+}
+
+.Display button {
+  background-color: blue;
+}
+
+#score {
+  font-family: "DJB Get Digital";
+  font-size: 30px;
+}
